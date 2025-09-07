@@ -2,7 +2,7 @@ from fastapi import  FastAPI,UploadFile,File
 import whisper
 import shutil
 
-app=FastAPI();
+app=FastAPI()
 model=whisper.load_model("base")
 
 @app.get("/")
